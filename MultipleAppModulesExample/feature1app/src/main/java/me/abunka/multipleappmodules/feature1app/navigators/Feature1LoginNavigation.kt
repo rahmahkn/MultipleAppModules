@@ -7,7 +7,7 @@ import me.abunka.multipleappmodules.login.LoginNavigation
 import javax.inject.Inject
 
 @ActivityScope
-class Feature1LoginNavigation @Inject constructor(): LoginNavigation {
+class Feature1LoginNavigation @Inject constructor() : LoginNavigation {
     override fun finishLogin(activity: Activity) {
         activity.startActivity(ActivityA.getIntent(activity))
     }

@@ -2,8 +2,8 @@ package me.abunka.multipleappmodules.feature1app.navigators
 
 import android.app.Activity
 import android.support.v7.app.AlertDialog
-import me.abunka.multipleappmodules.feature1app.di.ActivityScope
 import me.abunka.multipleappmodules.feature1.Feature1Navigation
+import me.abunka.multipleappmodules.feature1app.di.ActivityScope
 import javax.inject.Inject
 
 @ActivityScope

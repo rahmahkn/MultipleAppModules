@@ -6,10 +6,11 @@ import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_b.*
 
-class ActivityB: DaggerAppCompatActivity() {
+class ActivityB : DaggerAppCompatActivity() {
     companion object {
         fun getIntent(context: Context) = Intent(context, ActivityB::class.java)
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_b)

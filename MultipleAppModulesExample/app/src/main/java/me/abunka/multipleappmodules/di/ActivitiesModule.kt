@@ -2,12 +2,12 @@ package me.abunka.multipleappmodules.di
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import me.abunka.multipleappmodules.login.LoginActivity
 import me.abunka.multipleappmodules.MainActivity
 import me.abunka.multipleappmodules.feature1.ActivityB
 import me.abunka.multipleappmodules.feature1.ActivityC
 import me.abunka.multipleappmodules.feature2.ActivityE
 import me.abunka.multipleappmodules.feature2.ActivityF
+import me.abunka.multipleappmodules.login.LoginActivity
 
 @Module
 interface ActivitiesModule {

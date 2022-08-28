@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
 
-class ActivityD: DaggerAppCompatActivity() {
+class ActivityD : DaggerAppCompatActivity() {
 
     companion object {
         fun getIntent(context: Context) = Intent(context, ActivityD::class.java)

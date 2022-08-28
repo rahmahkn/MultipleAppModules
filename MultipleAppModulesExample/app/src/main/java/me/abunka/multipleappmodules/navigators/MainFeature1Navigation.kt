@@ -7,7 +7,7 @@ import me.abunka.multipleappmodules.feature2.ActivityF
 import javax.inject.Inject
 
 @ActivityScope
-class MainFeature1Navigation @Inject constructor(): Feature1Navigation {
+class MainFeature1Navigation @Inject constructor() : Feature1Navigation {
     override fun goToF(activity: Activity) {
         activity.startActivity(ActivityF.getIntent(activity))
     }

@@ -4,11 +4,11 @@ import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 import me.abunka.multipleappmodules.feature1app.di.DaggerApplicationComponent
 
-class Feature1Application: DaggerApplication() {
+class Feature1Application : DaggerApplication() {
 
     override fun applicationInjector(): AndroidInjector<Feature1Application> =
-            DaggerApplicationComponent
-                    .builder()
-                    .create(this)
+        DaggerApplicationComponent
+            .builder()
+            .create(this)
 
 }

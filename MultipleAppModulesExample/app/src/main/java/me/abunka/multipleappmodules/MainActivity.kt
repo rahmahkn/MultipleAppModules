@@ -16,20 +16,24 @@ class MainActivity : DaggerAppCompatActivity() {
         fun getIntent(context: Context) = Intent(context, MainActivity::class.java)
     }
 
-    private fun replaceFragment(fragment: Fragment) = supportFragmentManager.beginTransaction().apply {
-        replace(R.id.homeContent, fragment)
-    }.commitAllowingStateLoss()
+    private fun replaceFragment(fragment: Fragment) =
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.homeContent, fragment)
+        }.commitAllowingStateLoss()
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-        replaceFragment(when (item.itemId) {
-            R.id.navigation_home -> MainFragment.newInstance()
-            R.id.navigation_dashboard -> FragmentA.newInstance()
-            R.id.navigation_notifications -> FragmentD.newInstance()
-            else -> throw UnsupportedOperationException("Unknown tab!")
-        })
+    private val mOnNavigationItemSelectedListener =
+        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            replaceFragment(
+                when (item.itemId) {
+                    R.id.navigation_home -> MainFragment.newInstance()
+                    R.id.navigation_dashboard -> FragmentA.newInstance()
+                    R.id.navigation_notifications -> FragmentD.newInstance()
+                    else -> throw UnsupportedOperationException("Unknown tab!")
+                }
+            )
 
-        true
-    }
+            true
+        }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

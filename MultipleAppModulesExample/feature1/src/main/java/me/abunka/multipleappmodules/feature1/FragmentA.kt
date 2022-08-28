@@ -8,7 +8,7 @@ import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_a.*
 import javax.inject.Inject
 
-class FragmentA: DaggerFragment() {
+class FragmentA : DaggerFragment() {
     companion object {
         fun newInstance() = FragmentA()
     }
@@ -16,8 +16,12 @@ class FragmentA: DaggerFragment() {
     @Inject
     lateinit var navigation: Feature1Navigation
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
-            inflater.inflate(R.layout.fragment_a, container, false)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? =
+        inflater.inflate(R.layout.fragment_a, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

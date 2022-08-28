@@ -2,12 +2,12 @@ package me.abunka.multipleappmodules.feature2
 
 import android.content.Context
 import android.content.Intent
-import kotlinx.android.synthetic.main.activity_e.*
 import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
+import kotlinx.android.synthetic.main.activity_e.*
 import javax.inject.Inject
 
-class ActivityE: DaggerAppCompatActivity() {
+class ActivityE : DaggerAppCompatActivity() {
 
     companion object {
         fun getIntent(context: Context) = Intent(context, ActivityE::class.java)
